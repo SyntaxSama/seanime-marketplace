@@ -289,5 +289,16 @@
     "website": "",
     "lang": "EN",
     "payloadURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/advsearch.ts"
+  },
+  {
+    "id":"kaa",
+    "name":"KickAssAnime",
+    "manifestURI":"https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/kaa/manifest.json",
+    "language":"typescript",
+    "type":"onlinestream-provider",
+    "description":"KickAssAnime is an online stream provider for both sub and dub with soft subs.",
+    "author":"Thekingcrusher",
+    "icon":"https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/kaa/logo.ico",
+    "lang":"en"
   }
 ]
