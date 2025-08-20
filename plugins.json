@@ -280,7 +280,6 @@
   {
     "id": "advanced-search",
     "name": "Advanced Search",
-    "version": "1.0.1",
     "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "plugin",
