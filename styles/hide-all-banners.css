@@ -1,0 +1,5 @@
+[data-discover-page-header-banner-image-container="true"],
+[data-library-header-container="true"],
+[data-media-page-header-banner="true"] {
+  display: none !important;
+}

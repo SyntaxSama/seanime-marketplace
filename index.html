@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marketplace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+  <nav class="bg-gray-900/75 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        Seanime Marketplace
+      </h1>
+
+      <div class="flex gap-2">
+        <button class="tab-btn px-3 py-1.5 rounded-lg hover:bg-gray-800 transition" data-tab="plugins">Plugins</button>
+        <button class="tab-btn px-3 py-1.5 rounded-lg hover:bg-gray-800 transition" data-tab="online">Online Streams</button>
+        <button class="tab-btn px-3 py-1.5 rounded-lg hover:bg-gray-800 transition" data-tab="manga">Manga Providers</button>
+        <button class="tab-btn px-3 py-1.5 rounded-lg hover:bg-gray-800 transition" data-tab="torrent">Anime Torrents</button>
+        <button class="tab-btn px-3 py-1.5 rounded-lg hover:bg-gray-800 transition" data-tab="styling">Styling</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg-gray-900 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <input id="search" type="search" placeholder="Search plugins, authors, descriptions..." 
+        class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none transition" />
+    </div>
+  </div>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <section id="plugins" class="tab-content grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></section>
+    <section id="online" class="tab-content hidden grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></section>
+    <section id="manga" class="tab-content hidden grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></section>
+    <section id="torrent" class="tab-content hidden grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></section>
+
+    <section id="styling" class="tab-content hidden mt-4 space-y-6">
+      <div id="styling-container" class="grid gap-6 sm:grid-cols-1 lg:grid-cols-2"></div>
+      <div id="styling-empty" class="text-gray-400">Loading snippets...</div>
+    </section>
+  </main>
+
+  <div id="snippet-modal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
+  <div class="bg-gray-900 rounded-2xl border border-gray-800 shadow-2xl max-w-5xl w-full h-[90vh] flex flex-col overflow-hidden">
+    <div class="flex justify-between items-center px-5 py-3 border-b border-gray-800 bg-gray-950/70 backdrop-blur-md">
+      <h3 class="text-lg font-semibold text-gray-100">CSS Snippet</h3>
+      <div class="flex items-center gap-3">
+        <button id="modal-copy" class="px-3 py-1.5 text-sm rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">Copy</button>
+        <button id="modal-close" class="text-gray-400 hover:text-gray-200 text-2xl leading-none">&times;</button>
+      </div>
+    </div>
+
+    <div class="flex-1 overflow-auto p-5 bg-gray-950">
+      <pre class="whitespace-pre-wrap break-words font-mono text-sm leading-relaxed text-gray-200"><code id="modal-code"></code></pre>
+    </div>
+  </div>
+</div>
+
+  <template id="card-template">
+    <div class="bg-gray-900 rounded-xl border border-gray-800 p-5 flex flex-col shadow-md hover:shadow-xl hover:border-gray-700 transition">
+      <div class="flex items-center mb-4">
+        <img class="w-12 h-12 rounded-lg mr-3 border border-gray-700 object-cover" loading="lazy" onerror="this.onerror=null;this.src=placeholderDataUrl">
+        <div>
+          <h2 class="text-lg font-bold leading-tight"></h2>
+          <p class="text-xs text-gray-400 mt-0.5"></p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-300 flex-grow"></p>
+      <div class="mt-4 flex flex-wrap gap-2"></div>
+    </div>
+  </template>
+
+  <template id="snippet-template">
+    <div class="bg-gray-900 rounded-xl border border-gray-800 p-4 shadow-md hover:border-gray-700 transition">
+      <div class="flex items-center justify-between mb-3">
+        <div>
+          <h3 class="font-semibold text-lg leading-tight"></h3>
+          <p class="text-xs text-gray-400 mt-0.5 snippet-file"></p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="eye-btn text-gray-400 hover:text-gray-200" title="View"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></button>
+          <button class="copy-btn px-3 py-1.5 text-sm rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition">Copy</button>
+        </div>
+      </div>
+      <pre class="bg-gray-950 p-3 rounded text-sm overflow-x-auto"><code class="snippet-code"></code></pre>
+    </div>
+  </template>
+
+  <script>
+    const placeholderDataUrl = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      `<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'>
+        <rect width='100%' height='100%' fill='#111827'/>
+        <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='#6b7280' font-size='14'>no image</text>
+      </svg>`)
+
+    const $ = s => document.querySelector(s);
+    const $$ = s => Array.from(document.querySelectorAll(s));
+
+    function setActiveTab(id) {
+      $$('.tab-btn').forEach(b => b.classList.remove('ring-2','ring-blue-500'));
+      const activeBtn = $$('.tab-btn').find(b => b.dataset.tab === id);
+      if (activeBtn) activeBtn.classList.add('ring-2','ring-blue-500');
+      $$('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function normalizePluginData(data) {
+      if (!data) return [];
+      if (Array.isArray(data)) return data;
+      const arrCandidates = Object.values(data).filter(v => Array.isArray(v) && v.length && typeof v[0] === 'object');
+      if (arrCandidates.length) return arrCandidates.flat();
+      const objValues = Object.values(data).filter(v => v && typeof v === 'object' && !Array.isArray(v));
+      if (objValues.length) return objValues;
+      return [];
+    }
+
+    async function loadPlugins() {
+      const urls = ["marketplace/plugins.json", "/marketplace/plugins.json", "plugins.json"];
+      let res, data;
+      for (const u of urls) {
+        try {
+          res = await fetch(u);
+          if (!res.ok) continue;
+          data = await res.json();
+          break;
+        } catch (e) {}
+      }
+
+      const containers = {
+        plugin: document.getElementById('plugins'),
+        'onlinestream-provider': document.getElementById('online'),
+        'manga-provider': document.getElementById('manga'),
+        'anime-torrent-provider': document.getElementById('torrent')
+      };
+
+      Object.values(containers).forEach(c => c.innerHTML = '');
+
+      if (!data) {
+        Object.values(containers).forEach(c => c.innerHTML = `<div class="text-gray-400">No items found (expected marketplace/plugins.json)</div>`);
+        return;
+      }
+
+      const items = normalizePluginData(data);
+      if (!items.length) {
+        Object.values(containers).forEach(c => c.innerHTML = `<div class="text-gray-400">No items found in plugins JSON.</div>`);
+        return;
+      }
+
+      const tpl = document.getElementById('card-template');
+      items.forEach(item => {
+        if (!item || typeof item !== 'object') return;
+        const type = item.type || '';
+        const target = containers[type];
+        if (!target) return;
+
+        const node = tpl.content.cloneNode(true);
+        const img = node.querySelector('img');
+        const title = node.querySelector('h2');
+        const authorEl = node.querySelector('p.text-xs');
+        const desc = node.querySelector('p.text-sm');
+        const btns = node.querySelector('div.mt-4');
+
+        img.src = item.icon || placeholderDataUrl;
+        title.textContent = item.name || item.id || 'Unnamed';
+        authorEl.textContent = item.author ? `by ${item.author}` : '';
+        desc.textContent = item.description || '';
+        btns.innerHTML = '';
+
+        if (item.website) {
+          const a = document.createElement('a');
+          a.href = item.website;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.className = 'px-3 py-1.5 text-sm bg-blue-600 rounded-lg hover:bg-blue-500 transition';
+          a.textContent = 'Website';
+          btns.appendChild(a);
+        }
+
+        if (item.manifestURI) {
+          const btn = document.createElement('button');
+          btn.className = 'px-3 py-1.5 text-sm bg-green-600 rounded-lg hover:bg-green-500 transition';
+          btn.textContent = 'Install';
+          btn.addEventListener('click', async () => {
+            try {
+              await navigator.clipboard.writeText(item.manifestURI);
+              btn.textContent = 'Copied!';
+              setTimeout(() => btn.textContent = 'Install', 2000);
+            } catch {
+              btn.textContent = 'Error';
+              setTimeout(() => btn.textContent = 'Install', 2000);
+            }
+          });
+          btns.appendChild(btn);
+        }
+
+        target.appendChild(node);
+      });
+    }
+
+    function applySearch(term) {
+      const q = term.trim().toLowerCase();
+      document.querySelectorAll('.tab-content > div').forEach(card => {
+        if (!card) return;
+        const text = card.innerText.toLowerCase();
+        card.style.display = q === '' || text.includes(q) ? '' : 'none';
+      });
+    }
+
+    async function loadSnippets() {
+      const container = document.getElementById('styling-container');
+      const empty = document.getElementById('styling-empty');
+      container.innerHTML = '';
+      empty.textContent = 'Loading snippets...';
+
+      let res;
+      try {
+        res = await fetch('styles/snippets.json');
+        if (!res.ok) throw new Error('no snippets.json');
+      } catch {
+        empty.innerHTML = `No snippets found. Add <code class="bg-gray-800 rounded px-1">marketplace/styles/snippets.json</code>`;
+        return;
+      }
+
+      let data;
+      try { data = await res.json(); } catch {
+        empty.textContent = 'snippets.json is not valid JSON.';
+        return;
+      }
+
+      let snippets = [];
+      if (Array.isArray(data)) snippets = data;
+      else if (Array.isArray(data.snippets)) snippets = data.snippets;
+      else snippets = Object.values(data).filter(v => v && (v.file || v.path));
+
+      if (!snippets.length) {
+        empty.textContent = 'No snippets listed in snippets.json.';
+        return;
+      }
+
+      empty.textContent = '';
+      const tpl = document.getElementById('snippet-template');
+
+      await Promise.all(snippets.map(async (s, idx) => {
+        const item = typeof s === 'string' ? { name: s, file: s } : s;
+        const file = item.file || item.path;
+        const name = item.name || file || `snippet-${idx+1}`;
+
+        const node = tpl.content.cloneNode(true);
+        node.querySelector('h3').textContent = name;
+        node.querySelector('.snippet-file').textContent = file;
+
+        const codeEl = node.querySelector('.snippet-code');
+        const copyBtn = node.querySelector('.copy-btn');
+        const eyeBtn = node.querySelector('.eye-btn');
+
+        try {
+          const r = await fetch(file);
+          if (!r.ok) throw new Error('not found');
+          const txt = await r.text();
+          codeEl.textContent = txt.trim();
+        } catch {
+          codeEl.textContent = '/* failed to load file: ' + file + ' */';
+        }
+
+        copyBtn.addEventListener('click', async () => {
+          const original = copyBtn.textContent;
+          try {
+            await navigator.clipboard.writeText(codeEl.textContent);
+            copyBtn.textContent = 'Copied!';
+            setTimeout(() => copyBtn.textContent = original, 2000);
+          } catch {
+            copyBtn.textContent = 'Error';
+            setTimeout(() => copyBtn.textContent = original, 2000);
+          }
+        });
+
+        eyeBtn.addEventListener('click', () => {
+          $('#modal-code').textContent = codeEl.textContent;
+          $('#snippet-modal').classList.remove('hidden');
+          $('#snippet-modal').classList.add('flex');
+        });
+
+        container.appendChild(node);
+      }));
+    }
+
+    const modalCode = document.getElementById('modal-code');
+  const modalCopyBtn = document.getElementById('modal-copy');
+
+  modalCopyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(modalCode.textContent);
+      modalCopyBtn.textContent = 'Copied!';
+      setTimeout(() => modalCopyBtn.textContent = 'Copy', 2000);
+    } catch {
+      modalCopyBtn.textContent = 'Error';
+      setTimeout(() => modalCopyBtn.textContent = 'Copy', 2000);
+    }
+  });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      $$('.tab-btn').forEach(btn => btn.addEventListener('click', () => setActiveTab(btn.dataset.tab)));
+      setActiveTab('plugins');
+
+      let t;
+      $('#search').addEventListener('input', (e) => {
+        clearTimeout(t);
+        t = setTimeout(() => applySearch(e.target.value), 120);
+      });
+
+      $('#modal-close').addEventListener('click', () => {
+        $('#snippet-modal').classList.add('hidden');
+        $('#snippet-modal').classList.remove('flex');
+      });
+      $('#snippet-modal').addEventListener('click', (e) => {
+        if (e.target === $('#snippet-modal')) {
+          $('#snippet-modal').classList.add('hidden');
+          $('#snippet-modal').classList.remove('flex');
+        }
+      });
+
+      loadPlugins();
+      loadSnippets();
+    });
+  </script>
+</body>
+</html>

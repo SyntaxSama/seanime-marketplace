@@ -1,0 +1,7 @@
+img[src="/logo.png"]{
+    background: url(assets/paintlogo.png);
+    height: 0;
+    width: 0;
+    padding: 1.25rem;
+    background-size: cover;
+}

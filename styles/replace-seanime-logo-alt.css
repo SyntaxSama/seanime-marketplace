@@ -1,0 +1,10 @@
+.w-15 {
+  visibility:hidden;
+}
+.pb-0 {
+  background-image: url('/assets/logo.png') !important;
+  background-position: center center;
+  margin-top: 15px;
+  background-size:50%;
+  background-repeat: no-repeat;
+}

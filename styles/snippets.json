@@ -1,0 +1,11 @@
+[
+  { "name": "Remove FadeIn Effect", "file": "styles/remove-fadein.css" },
+  { "name": "Show Tray Only On Hover", "file": "styles/tray-onhover.css" },
+  { "name": "Disable Media Page Animations", "file": "styles/disable-mediapage-animation.css" },
+  { "name": "Hide Anime Entry Banner", "file": "styles/hide-animeentry-banner.css" },
+  { "name": "Hide Discovery Banner", "file": "styles/hide-discovery-banner.css" },
+  { "name": "Hide Library Banner", "file": "styles/hide-library-banner.css" },
+  { "name": "Hide All Banners", "file": "styles/hide-all-banners.css" },
+  { "name": "Replace Seanime Logo", "file": "styles/replace-seanime-logo.css" },
+  { "name": "Replace Seanime Logo (Alt)", "file": "styles/replace-seanime-logo-alt.css" }
+]

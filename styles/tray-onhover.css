@@ -1,0 +1,8 @@
+[data-plugin-sidebar-tray], [data-plugin-tray-icon-tooltip]:hover {
+    opacity: 0 !important;
+}
+
+[data-plugin-sidebar-tray]:hover, [data-plugin-tray-icon-tooltip]{
+    opacity: 1 !important;
+    transition: opacity 0.3s ease-in-out;
+}
