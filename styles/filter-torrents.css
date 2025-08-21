@@ -1,0 +1,19 @@
+[data-subtitle*="AV1"],
+[data-subtitle*="mini"],
+[data-release-group="EMBER"],
+[data-release-group="ASW"],
+[data-release-group="Ohys-Raws"],
+[data-release-group="DKB"],
+[data-release-group="Cleo"],
+[data-release-group="Anime Time"],
+[data-release-group="Tenrai-Sensei"],
+[data-release-group="AniDL"],
+[data-release-group="Exiled-Destiny"],
+[data-release-group="DeadFish"],
+[data-release-group="DB"],
+[data-release-group="Kirion"],
+[data-release-group="neoDESU"],
+[data-release-group="neoHEVC"],
+[data-release-group="Judas"] {
+  display: none !important;
+}
