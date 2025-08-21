@@ -7,5 +7,7 @@
   { "name": "Hide Library Banner", "file": "styles/hide-library-banner.css" },
   { "name": "Hide All Banners", "file": "styles/hide-all-banners.css" },
   { "name": "Replace Seanime Logo", "file": "styles/replace-seanime-logo.css" },
-  { "name": "Replace Seanime Logo (Alt)", "file": "styles/replace-seanime-logo-alt.css" }
+  { "name": "Replace Seanime Logo (Alt)", "file": "styles/replace-seanime-logo-alt.css" },
+  { "name": "Filter Torrents", "file": "styles/filter-torrents.css" },
+  { "name": "Better Best Releases", "file": "styles/best-torrent-releases.css"}
 ]
