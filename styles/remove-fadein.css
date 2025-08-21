@@ -1,4 +1,4 @@
-[data-media-page-header-entry-details-cover-image-container] *, [data-media-page-header-details-motion-container], [data-media-page-header-details-container], [data-media-page-header-banner-image], [data-media-page-header], [data-page-wrapper], [data-media-page-header-entry-details-title-container] span {
+[data-media-page-header-entry-details-cover-image-container] *, [data-media-page-header-details-motion-container], [data-media-page-header-details-container], [data-media-page-header-banner-image], [data-media-page-header], [data-page-wrapper][data-anime-entry-page-content], [data-media-page-header-entry-details-title-container] span {
     opacity: 1 !important;
     transform: none !important
 }
