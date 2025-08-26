@@ -322,5 +322,16 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/french-anime/favicon.png",
     "lang": "fr"
+  },
+  {
+    "id": "SubsPlease-Provider",
+    "name": "SubsPlease",
+    "description": "Fetches torrents from SubsPlease.org",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/manifest.json",
+    "author": "Bas1874",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "multi",
+	  "icon": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/icon/icon.jpeg"
   }
 ]
