@@ -344,5 +344,41 @@
     "author": "bas1874",
     "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Next-Seanime/refs/heads/main/src/icon/icon.png",
     "lang": "en"
+  },
+  {
+	"id": "Dub-Schedule",
+    "name": "Dub Schedule",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Adds dubbed anime to the schedule page.",
+    "author": "Bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/icons/icon.png",
+    "website": "",
+    "lang": "multi"
+  ],
+  {
+	"id": "anime-sama-online-streaming",
+    "name": "Anime Sama",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-sama/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Anime Sama est une extension Seanime en français qui permet de regarder des anime dans le catalogue du site anime-sama.com.",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-sama/favicon.png",
+    "website": "",
+    "lang": "fr"
+  },
+  {
+	"id": "watch-order",
+    "name": "Watch Order",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Displays the watch order for an anime series on the anime page.",
+    "author": "Bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/scr/icons/AnimeWatchOrderV4.png",
+    "website": "https://github.com/Bas1874/Watch-Order-Seanime",
+    "lang": "en"
   }
 ]
