@@ -380,5 +380,16 @@
     "icon": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/scr/icons/AnimeWatchOrderV4.png",
     "website": "https://github.com/Bas1874/Watch-Order-Seanime",
     "lang": "en"
-  }
+  },
+	{
+    "id": "oppai-stream-online-streaming",
+    "name": "Oppai Stream (18+)",
+    "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/oppai-stream/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Provides seamless integration with the oppai.stream catalog for online streaming within Seanime, enabling users to watch available titles directly from the platform.",
+    "author": "TropicalFrog3",
+    "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/oppai-stream/favicon.png",
+    "lang": "en",
+	}
 ]
