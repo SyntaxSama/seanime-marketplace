@@ -9,5 +9,6 @@
   { "name": "Replace Seanime Logo", "file": "styles/replace-seanime-logo.css" },
   { "name": "Replace Seanime Logo (Alt)", "file": "styles/replace-seanime-logo-alt.css" },
   { "name": "Filter Torrents", "file": "styles/filter-torrents.css" },
-  { "name": "Better Best Releases", "file": "styles/best-torrent-releases.css"}
+  { "name": "Better Best Releases", "file": "styles/best-torrent-releases.css"},
+  { "name": "Hide Scrollbar", "file": "styles/hide-scrollbar.css"}
 ]
