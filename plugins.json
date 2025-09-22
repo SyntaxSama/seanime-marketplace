@@ -402,5 +402,17 @@
     "author": "TropicalFrog3",
     "icon": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-ultra/favicon.png",
     "lang": "fr"
+  },
+  {
+	"id": "animepahe-si-patch",
+    "name": "Animepahe | Patch",
+    "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "A temporary patch for the Animepahe extension created by Kikodev",
+    "author": "Seanime & Kikodev",
+    "icon": "",
+    "website": "",
+    "lang": "en"
   }
 ]
