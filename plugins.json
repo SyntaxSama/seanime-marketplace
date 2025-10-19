@@ -291,15 +291,15 @@
     "payloadURI": "https://raw.githubusercontent.com/SyntaxSama/advanced-search/refs/heads/main/advsearch.ts"
   },
   {
-    "id":"kaa",
-    "name":"KickAssAnime",
-    "manifestURI":"https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/kaa/manifest.json",
-    "language":"typescript",
-    "type":"onlinestream-provider",
-    "description":"KickAssAnime is an online stream provider for both sub and dub with soft subs.",
-    "author":"Thekingcrusher",
-    "icon":"https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/kaa/logo.ico",
-    "lang":"en"
+    "id": "kaa",
+    "name": "KickAssAnime",
+    "manifestURI": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/kaa/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "KickAssAnime is an online stream provider for both sub and dub with soft subs.",
+    "author": "Thekingcrusher",
+    "icon": "https://raw.githubusercontent.com/Thekingcrusher/online-stream-providers/refs/heads/main/kaa/logo.ico",
+    "lang": "en"
   },
   {
     "id": "mangalivre-tv",
@@ -332,7 +332,7 @@
     "type": "anime-torrent-provider",
     "language": "typescript",
     "lang": "multi",
-	"icon": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/icon/icon.jpeg"
+    "icon": "https://raw.githubusercontent.com/Bas1874/SubsPleaseSeanime/refs/heads/main/src/icon/icon.jpeg"
   },
   {
     "id": "Watch-Next",
@@ -346,7 +346,7 @@
     "lang": "en"
   },
   {
-	"id": "Dub-Schedule",
+    "id": "Dub-Schedule",
     "name": "Dub Schedule",
     "manifestURI": "https://raw.githubusercontent.com/Bas1874/Dub-Schedule-Seanime/refs/heads/main/src/manifest.json",
     "language": "typescript",
@@ -358,7 +358,7 @@
     "lang": "multi"
   },
   {
-	"id": "anime-sama-online-streaming",
+    "id": "anime-sama-online-streaming",
     "name": "Anime Sama",
     "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-sama/manifest.json",
     "language": "typescript",
@@ -370,7 +370,7 @@
     "lang": "fr"
   },
   {
-	"id": "watch-order",
+    "id": "watch-order",
     "name": "Watch Order",
     "manifestURI": "https://raw.githubusercontent.com/Bas1874/Watch-Order-Seanime/refs/heads/main/src/manifest.json",
     "language": "typescript",
@@ -393,7 +393,7 @@
     "lang": "en"
   },
   {
-	"id": "anime-ultra-online-streaming",
+    "id": "anime-ultra-online-streaming",
     "name": "FR | Anime Ultra",
     "manifestURI": "https://raw.githubusercontent.com/TropicalFrog3/seanime-extension/refs/heads/main/online-streaming/anime-ultra/manifest.json",
     "language": "typescript",
@@ -404,7 +404,7 @@
     "lang": "fr"
   },
   {
-	"id": "animepahe-si-patch",
+    "id": "animepahe-si-patch",
     "name": "Animepahe | Patch",
     "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/manifest.json",
     "language": "typescript",
@@ -416,7 +416,7 @@
     "lang": "en"
   },
   {
-	"id": "ilcorsaronero",
+    "id": "ilcorsaronero",
     "name": "IlCorsaroNero",
     "language": "typescript",
     "type": "anime-torrent-provider",
@@ -425,5 +425,46 @@
     "icon": "https://raw.githubusercontent.com/faddix/seanime-iCN/main/src/iCN-logo.png",
     "lang": "it",
     "manifestURI": "https://raw.githubusercontent.com/faddix/seanime-iCN//main/ilcorsaronero.json"
+  },
+  {
+    "id": "YGG-Provider",
+    "name": "YGG Torrent",
+    "manifestURI": "https://raw.githubusercontent.com/MLB-11/YGGTorrentSeanime/refs/heads/main/manifest.json",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "YGG Provider for French content",
+    "author": "mlb11",
+    "icon": "https://raw.githubusercontent.com/MLB-11/YGGTorrentSeanime/main/icon/ygg.webp",
+    "lang": "fr"
+  },
+  {
+    "id": "mangafreak",
+    "name": "MangaFreak",
+    "description": "MangaFreak is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangafreak/manifest.json",
+    "author": "pal",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en"
+  },
+  {
+    "id": "AnimeUnity",
+    "name": "AnimeUnity",
+    "description": "AnimeUnity is an online streaming provider for animes dubbed/subbed in Italian",
+    "manifestURI": "https://raw.githubusercontent.com/kRYstall9/Seanime-streaming-providers/refs/heads/main/src/AnimeUnity/animeunity.json",
+    "author": "kRYstall9",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "it"
+  },
+  {
+    "id": "scanita",
+    "name": "Scanita",
+    "description": "Scanita is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/scanita/manifest.json",
+    "author": "pal",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "it"
   }
 ]
