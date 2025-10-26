@@ -404,15 +404,14 @@
     "lang": "fr"
   },
   {
-    "id": "animepahe-si-patch",
-    "name": "Animepahe | Patch",
+    "id": "animepahe",
+    "name": "Animepahe",
     "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
-    "description": "A temporary patch for the Animepahe extension created by Kikodev",
-    "author": "Seanime & Kikodev",
+    "description": "Animepahe streaming provider for Seanime",
+    "author": "ItsSkaiya",
     "icon": "",
-    "website": "",
     "lang": "en"
   },
   {
@@ -466,5 +465,90 @@
     "type": "manga-provider",
     "language": "javascript",
     "lang": "it"
+  },
+  {
+    "id": "mangafreak",
+    "name": "MangaFreak",
+    "description": "MangaFreak is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangafreak/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/pal-droid/seanime-providers/refs/heads/main/public/mangafreak.jpeg",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en"
+  },
+  {
+    "id": "mangapark",
+    "name": "MangaPark",
+    "description": "MangaPark manga provider for Seanime - access manga from mangapark.net",
+    "manifestURI": "https://raw.githubusercontent.com/Ari-03/mangapark/refs/heads/main/mangapark.json",    
+    "author": "ari___",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "en"
+  },
+  {
+    "id": "anidream",
+    "name": "AniDream",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider with soft/hard subs and dubs mainly in Italian.",
+    "author": "jabifx",
+    "lang": "it",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniDream/icon.jpg"
+  },
+  {
+    "id": "ui-translation",
+    "name": "UI Translation",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/UI-Translation/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Translates Seanime UI into 8 different languages.",
+    "author": "jabifx",
+    "lang": "multi"
+  },
+  {
+    "id": "mangabuddy",
+    "name": "MangaBuddy",
+    "description": "MangaBuddy is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/src/manga/mangabuddy/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/pal-droid/seanime-providers/refs/heads/main/public/mangabuddy.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en"
+  },
+  {
+    "id": "anizone",
+    "name": "AniZone",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AniZone/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider with soft subs and dubs.",
+    "author": "jabifx",
+    "lang": "multi"
+  },
+  {
+    "id": "animeflv",
+    "name": "AnimeFLV",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeFLV/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider for spanish subbed anime.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeFLV/icon.ico",
+    "lang": "es"
+  },
+  {
+    "id": "manhwaweb",
+    "name": "ManhwaWeb",
+    "description": "Spanish manga and manhwa provider.",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/manifest.json",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/ManhwaWeb/icon.png",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "es"
   }
 ]
