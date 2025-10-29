@@ -550,5 +550,16 @@
     "type": "manga-provider",
     "language": "typescript",
     "lang": "es"
+  },
+  {
+    "id": "animethemes",
+    "name": "AnimeThemes Player",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeThemes/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Displays an anime’s openings and endings (using animethemes.moe) directly on its page.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeThemes/icon.ico",
+    "lang": "multi"
   }
 ]
