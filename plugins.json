@@ -561,5 +561,25 @@
     "author": "jabifx",
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeThemes/icon.ico",
     "lang": "multi"
+  },
+  {
+    "id": "LN-reader",
+    "name": "Light Novel Reader",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/plugins/Light%20novel/manifest.json",
+    "description": "Read light‑novels from NovelBuddy inside Seanime.",
+    "author": "Pal",
+    "language": "typescript",
+    "type": "plugin"
+  },
+  {
+    "id": "anime-uniquestream",
+    "name": "Anime UniqueStream",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider with hard subs and dubs.",
+    "author": "jabifx",
+    "lang": "multi",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/icon.ico"
   }
 ]
