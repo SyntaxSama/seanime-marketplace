@@ -569,7 +569,8 @@
     "description": "Read light‑novels from NovelBuddy inside Seanime.",
     "author": "Pal",
     "language": "typescript",
-    "type": "plugin"
+    "type": "plugin",
+    "lang": "en"
   },
   {
     "id": "anime-uniquestream",
