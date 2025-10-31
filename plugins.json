@@ -582,5 +582,16 @@
     "author": "jabifx",
     "lang": "multi",
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeUniqueStream/icon.ico"
+  },
+  {
+    "id": "mangafire",
+    "name": "MangaFire",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaFire/manifest.json",
+    "language": "typescript",
+    "type": "manga-provider",
+    "description": "Multi language manga provider.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaFire/icon.png",
+    "lang": "multi"
   }
 ]
