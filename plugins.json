@@ -673,5 +673,17 @@
     "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/weebcentral.png",
     "website": "",
     "lang": "en"
+  },
+  {
+    "id": "antiseeding",
+    "name": "Anti-Seeding",
+    "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/antiseeding.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Prevents torrent seeding",
+    "author": "ItsSkaiya",
+    "icon": "",
+    "website": "",
+    "lang": "en"
   }
 ]
