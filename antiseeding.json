@@ -1,0 +1,24 @@
+{
+    "id": "antiseeding",
+    "name": "Anti-Seeding",
+    "version": "1.0.0",
+    "manifestURI": "",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Prevents torrent seeding",
+    "author": "ItsSkaiya",
+    "icon": "",
+    "website": "",
+    "lang": "en",
+    "payload": "function init(){$ui.register((ctx)=>{ctx.setInterval(async ()=>{try{const torrents=await ctx.torrentClient.getActiveTorrents();for(const torrent of torrents){if(torrent.status==\"seeding\"){ctx.toast.info(\"Finished downloading - \"+torrent.name);await ctx.torrentClient.pauseTorrents([torrent.hash]);ctx.toast.info(\"Removed the torrent from torrent client.\");}}}catch(error){console.error(\"Error getting torrents:\",error)}}},1000);});}",
+    "plugin": {
+        "version": "1",
+        "permissions": {
+            "scopes": [
+                "torrent-client"
+            ],
+            "allow": {}
+        }
+    },
+    "isDevelopment": false
+}
