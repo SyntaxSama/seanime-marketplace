@@ -685,5 +685,17 @@
     "icon": "",
     "website": "",
     "lang": "en"
+  },
+  {
+    "id": "animeav1",
+    "name": "AnimeAV1",
+    "version": "1.0.0",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/manifest.json",
+    "language": "typescript",
+    "type": "onlinestream-provider",
+    "description": "Online streaming provider with hard subs and dubs in Spanish.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/icon.png",
+    "lang": "es"
   }
 ]
