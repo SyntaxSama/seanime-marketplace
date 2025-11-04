@@ -697,5 +697,15 @@
     "author": "jabifx",
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/AnimeAV1/icon.png",
     "lang": "es"
+  },
+  {
+    "id": "weebdex",
+    "name": "WeebDex",
+    "description": "WeebDex manga provider for Seanime - access manga from weebdex.org",
+    "manifestURI": "https://raw.githubusercontent.com/Ari-03/weebdex/refs/heads/main/weebdex.json",
+    "author": "ari___",
+    "type": "manga-provider",
+    "language": "typescript",
+    "lang": "en"
   }
 ]
