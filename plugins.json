@@ -468,17 +468,6 @@
     "lang": "it"
   },
   {
-    "id": "mangafreak",
-    "name": "MangaFreak",
-    "description": "MangaFreak is a manga provider for Seanime",
-    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangafreak/manifest.json",
-    "author": "pal",
-    "icon": "https://raw.githubusercontent.com/pal-droid/seanime-providers/refs/heads/main/public/mangafreak.jpeg",
-    "type": "manga-provider",
-    "language": "javascript",
-    "lang": "en"
-  },
-  {
     "id": "mangapark",
     "name": "MangaPark",
     "description": "MangaPark manga provider for Seanime - access manga from mangapark.net",
