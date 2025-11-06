@@ -441,6 +441,7 @@
     "name": "MangaFreak",
     "description": "MangaFreak is a manga provider for Seanime",
     "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/mangafreak/manifest.json",
+    "icon": "https://raw.githubusercontent.com/pal-droid/seanime-providers/refs/heads/main/public/mangafreak.jpeg",
     "author": "pal",
     "type": "manga-provider",
     "language": "javascript",
