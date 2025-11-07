@@ -697,5 +697,16 @@
     "type": "manga-provider",
     "language": "typescript",
     "lang": "en"
+  },
+  {
+    "id": "mangadex",
+    "name": "Mangadex",
+    "manifestURI": "https://raw.githubusercontent.com/HyperKiko/seanime-extensions/main/src/mangadex/mangadex.json",
+    "language": "typescript",
+    "type": "manga-provider",
+    "description": "",
+    "author": "kiko",
+    "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/mangadex.png",
+    "lang": "en"
   }
 ]
