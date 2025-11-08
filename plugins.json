@@ -463,6 +463,7 @@
     "description": "Scanita is a manga provider for Seanime",
     "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/scanita/manifest.json",
     "author": "pal",
+    "icon": "https://raw.githubusercontent.com/pal-droid/seanime-providers/refs/heads/main/public/scanita.png",
     "type": "manga-provider",
     "language": "javascript",
     "lang": "it"
