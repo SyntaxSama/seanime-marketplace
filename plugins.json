@@ -558,6 +558,7 @@
     "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/plugins/Light%20novel/manifest.json",
     "description": "Read light‑novels from NovelBuddy inside Seanime.",
     "author": "Pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/public/ln.png",
     "language": "typescript",
     "type": "plugin",
     "lang": "en"
