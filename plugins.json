@@ -409,6 +409,7 @@
     "manifestURI": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/manifest.json",
     "language": "typescript",
     "type": "onlinestream-provider",
+    "icon": "https://raw.githubusercontent.com/SyntaxSama/seanime-marketplace/refs/heads/main/animepahe.png",
     "description": "Animepahe streaming provider for Seanime",
     "author": "ItsSkaiya",
     "icon": "",
