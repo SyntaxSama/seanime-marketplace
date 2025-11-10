@@ -710,5 +710,17 @@
     "author": "kiko",
     "icon": "https://raw.githubusercontent.com/5rahim/hibike/main/icons/mangadex.png",
     "lang": "en"
+  },
+  {
+    "id": "Acgnx",
+    "name": "Acgnx",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Acgnx-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "Displays voice actors for characters and their work.",
+    "author": "bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Acgnx-Seanime/refs/heads/main/src/icon.png",
+    "website": "https://github.com/Bas1874/Acgnx-Seanime",
+    "lang": "Chinese"
   }
 ]
