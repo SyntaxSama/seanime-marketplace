@@ -734,5 +734,17 @@
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/icon.png",
     "website": "",
     "lang": "multi"
+  },
+  {
+    "id": "mangadex-source",
+    "name": "MangaDex",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/manifest.json",
+    "language": "typescript",
+    "type": "custom-source",
+    "description": "Implements MangaDex as a custom source.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaDexSource/icon.ico",
+    "website": "",
+    "lang": "multi"
   }
 ]
