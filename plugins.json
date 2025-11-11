@@ -722,5 +722,17 @@
     "icon": "https://raw.githubusercontent.com/Bas1874/Acgnx-Seanime/refs/heads/main/src/icon.png",
     "website": "https://github.com/Bas1874/Acgnx-Seanime",
     "lang": "Chinese"
+  },
+  {
+    "id": "mal-unofficial",
+    "name": "MyAnimeList",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/manifest.json",
+    "language": "typescript",
+    "type": "custom-source",
+    "description": "Implements MyAnimeList as a custom source via the unofficial Jikan API.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MAL/icon.png",
+    "website": "",
+    "lang": "multi"
   }
 ]
