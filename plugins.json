@@ -748,26 +748,38 @@
     "lang": "multi"
   },
   {
-      "id": "simkl",
-  "name": "Simkl",
-  "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/manifest.json",
-  "language": "typescript",
-  "type": "custom-source",
-  "description": "Implements SIMKL as a custom source.",
-  "author": "jabifx",
-  "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/icon.ico",
-  "website": "",
-  "lang": "multi"
+    "id": "simkl",
+    "name": "Simkl",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/manifest.json",
+    "language": "typescript",
+    "type": "custom-source",
+    "description": "Implements SIMKL as a custom source.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/SIMKL/icon.ico",
+    "website": "",
+    "lang": "multi"
   },
   {
-     "id": "thepiratebay",
-  "name": "ThePiratebay",
-  "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/manifest.json",
-  "language": "typescript",
-  "type": "anime-torrent-provider",
-  "description": "Adds ThePirateBay on Seanime as a torrent provider.",
-  "author": "jabifx",
-  "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/icon.png",
-  "lang": "en"
+    "id": "thepiratebay",
+    "name": "ThePiratebay",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/manifest.json",
+    "language": "typescript",
+    "type": "anime-torrent-provider",
+    "description": "Adds ThePirateBay on Seanime as a torrent provider.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/icon.png",
+    "lang": "en"
+  },
+  {
+    "id": "mangabaka",
+    "name": "MangaBaka",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/manifest.json",
+    "language": "typescript",
+    "type": "custom-source",
+    "description": "Implements MangaBaka as a custom source.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/icon.png",
+    "website": "",
+    "lang": "multi"
   }
 ]
