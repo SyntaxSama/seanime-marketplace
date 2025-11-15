@@ -769,5 +769,29 @@
   "author": "jabifx",
   "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/TPB/icon.png",
   "lang": "en"
-  }
+  },
+  {
+    "id": "anilist-notes",
+    "name": "Anilist Notes",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/anilist-notes/anilist-notes.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Add notes to anime that syncs with your AniList.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/anilist-notes/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "multi"
+  },
+  {
+    "id": "anilist-private",
+    "name": "Anilist Private",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/anilist-private/anilist-private.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Add functionality to private anime in AniList inside Seanime.",
+    "author": "nnotwen",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/anilist-private/icon.png",
+    "website": "https://github.com/nnotwen/n-seanime-extensions",
+    "lang": "multi"
+  },
 ]
