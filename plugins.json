@@ -781,5 +781,16 @@
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/MangaBaka/icon.png",
     "website": "",
     "lang": "multi"
+  },
+  {
+    "id": "komiku",
+    "name": "Komiku",
+    "description": "Komiku is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/komiku/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/komiku.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "id"
   }
 ]
