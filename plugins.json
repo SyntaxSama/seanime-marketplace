@@ -803,5 +803,16 @@
     "type": "manga-provider",
     "language": "javascript",
     "lang": "id"
+  },
+  {
+    "id": "comix",
+    "name": "Comix",
+    "description": "Comix is a manga provider for Seanime",
+    "manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/comix/manifest.json",
+    "author": "pal",
+    "icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/comix.png",
+    "type": "manga-provider",
+    "language": "javascript",
+    "lang": "en"
   }
 ]
