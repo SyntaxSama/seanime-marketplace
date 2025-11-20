@@ -814,5 +814,17 @@
     "type": "manga-provider",
     "language": "javascript",
     "lang": "en"
+  },
+  {
+    "id": "oneko",
+    "name": "Onekojs",
+    "manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/oneko/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Implements the famous Oneko.js script on seanime.",
+    "author": "jabifx",
+    "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/oneko/icon.png",
+    "website": "",
+    "lang": "multi"
   }
 ]
