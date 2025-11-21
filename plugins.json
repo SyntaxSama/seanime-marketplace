@@ -826,5 +826,29 @@
     "icon": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/oneko/icon.png",
     "website": "",
     "lang": "multi"
+  },
+  {
+    "id": "Doom",
+    "name": "Doom",
+    "manifestURI": "https://raw.githubusercontent.com/Bas1874/Doom-Seanime/refs/heads/main/src/manifest.json",
+    "language": "typescript",
+    "type": "plugin",
+    "description": "Doom in Seanime",
+    "author": "bas1874",
+    "icon": "https://raw.githubusercontent.com/Bas1874/Doom-Seanime/refs/heads/main/icons/Icon2.png",
+    "website": "",
+    "lang": "en"
+  },
+  {
+    "id": "anilist-private",
+    "name": "Anilist Private",
+	  "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/anilist-private.json",
+	  "language": "typescript",
+  	"type": "plugin",
+	  "description": "Add functionality to private anime in AniList inside Seanime.",
+  	"author": "nnotwen",
+	  "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/icon.png",
+  	"website": "https://github.com/nnotwen/n-seanime-extensions",
+	  "lang": "en"
   }
 ]
