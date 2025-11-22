@@ -842,13 +842,36 @@
   {
     "id": "anilist-private",
     "name": "Anilist Private",
-	  "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/anilist-private.json",
-	  "language": "typescript",
+    "manifestURI": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/anilist-private.json",
+    "language": "typescript",
   	"type": "plugin",
-	  "description": "Add functionality to private anime in AniList inside Seanime.",
+    "description": "Add functionality to private anime in AniList inside Seanime.",
   	"author": "nnotwen",
-	  "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/icon.png",
+    "icon": "https://raw.githubusercontent.com/nnotwen/n-seanime-extensions/master/plugins/Anilist%20Private/icon.png",
   	"website": "https://github.com/nnotwen/n-seanime-extensions",
-	  "lang": "en"
+    "lang": "en"
+  },
+  {
+	"id": "mangaworldadult",
+	"name": "MangaWorldAdult",
+	"description": "MangaWorldAdult is a manga provider for Seanime",
+	"manifestURI": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/refs/heads/main/src/manga/MangaWorldAdult/manifest.json",
+	"author": "pal",
+	"icon": "https://raw.githubusercontent.com/Pal-droid/Seanime-Providers/main/public/MangaWorld.jpeg",
+	"type": "manga-provider",
+	"language": "typescript",
+	"lang": "it"
+  },
+  {
+	"id": "kagane-source",
+	"name": "Kagane",
+	"manifestURI": "https://raw.githubusercontent.com/jabifx/seanime-extensions/master/src/KaganeSoruce/manifest.json",
+	"language": "typescript",
+	"type": "custom-source",
+	"description": "Implements Kagane as a custom source.",
+	"author": "jabifx",
+	"icon": "https://kagane.org/favicon.ico",
+	"website": "",
+	"lang": "multi"
   }
 ]
